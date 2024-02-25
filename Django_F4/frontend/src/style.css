@@ -1,0 +1,157 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    color: black;
+    background-image: url('../src/media/image.jpg');
+    background-position: center;
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, .menuLink:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+a:focus, a:active {
+    color: black;
+    font-weight: bold;
+    box-shadow: none;
+    border: none;
+    transform: scale(1.2);
+}
+
+/* Стили для шапки */
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 35px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* Стили для логотипа в шапке */
+.nav--logo_text {
+    font-weight: 700;
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стили для навигационных ссылок */
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 40px;
+}
+
+/* Стили для контейнера */
+.container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Стили для основного заголовка */
+.mainTitle {
+    font-weight: 700;
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стили для ссылок на главной странице */
+.mainPageLinks {
+    font-size: 28px;
+}
+
+/* Стили для кнопки "Назад" */
+.btnGoBack {
+    padding: 8px 16px;
+    margin: 1rem;
+    border-radius: 14px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 60px;
+    z-index: 110;
+}
+
+.btnGoBack:hover {
+    background-color: lightgray;
+}
+
+/* Стили для карточки рецепта */
+.recipeCard {
+    max-width: 1100px;
+    margin: 140px auto 50px;
+    padding: 2rem;
+    background-color: #e0e4e5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.cardTextDescriptions {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .recipeCard {
+        margin-top: 100px;
+        padding: 1rem;
+    }
+}
+
+/* Стили для ссылок категорий */
+.category-link {
+    color: black;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+/* Стили для страницы 404 */
+.notFoundContainer {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.notFoundContainer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.notFoundContainer p {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
