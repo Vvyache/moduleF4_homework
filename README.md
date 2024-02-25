@@ -25,9 +25,9 @@ Backend:
     python manage.py runserver
 
 # Установка и запуск среды разработки frontend React + Webpack
-- Переходим в терминале в директорию frontend
-- Восстановить модули: `npm install`   
-- Запуск СЕРВЕРА DevServer: `npm start`
+- Открыть во втором окне терминала директорию frontend
+- Восстановить зависимости командой: npm install   
+- Запуск СЕРВЕРА DevServer: npm start
 
 Сервер разработки будет запущен по адресу http://127.0.0.1:3000/
 
