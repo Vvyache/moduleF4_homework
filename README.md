@@ -9,7 +9,7 @@ Frontend:
 - сборщик пакетов webpack
 - react, установленный инструментом create-react-app
 - библиотека для маршрутизации react-router 
-# Backend:
+Backend:
 - сервер на основе фреймворка django
 - библиотека django rest framework для организации api интерфейса
 - инструмент для генерации документации к эндпоинтам swagger
