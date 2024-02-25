@@ -9,7 +9,6 @@ Frontend:
 - сборщик пакетов webpack
 - react, установленный инструментом create-react-app
 - библиотека для маршрутизации react-router 
-- взаимодействие с backend сервером django при помощи HTTP клиента axios  
 Backend:
 - сервер на основе фреймворка django
 - библиотека django rest framework для организации api интерфейса
@@ -17,31 +16,18 @@ Backend:
 - база данных SQLite
 
 # Установка и запуск среды разработки backend Django
-Клонируем репозиторий git clone https://github.com/Vvyache/moduleF4_homework.git
-
-Затем инсталлируем необходимые для работы проекта пакеты:  
-pip install djangorestframework  
-pip install django-cors-headers  
-pip install coreapi pyyaml  
-pip install django-rest-swagger
-
-В консоли переходим в директорию проекта и стартуем проект:  
-python manage.py runserver
-
-API проекта будет доступно по адресам:  
-http://127.0.0.1:8000/api/openapi - page schema openapi  
-http://127.0.0.1:8000/api/swagger-ui/ - page swagger-ui  
-http://127.0.0.1:8000/api/categories/ - список всех категорий блюд  
-http://127.0.0.1:8000/api/dishes/?category=Салаты -  Пример запроса блюд в категории 'Салаты'  
-http://127.0.0.1:8000/api/recipe/ - список всех рецептов блюд  
-http://127.0.0.1:8000/api/recipe/id - Рецепт блюда id
+- Клонируем репозиторий git clone https://github.com/Vvyache/moduleF4_homework.git
+- Затем инсталлируем необходимые для работы проекта пакеты: 
+    pip install -r requirements.txt
+- В консоли переходим в директорию проекта и стартуем проект:  
+    python manage.py runserver
 
 # Установка и запуск среды разработки frontend React + Webpack
+- Восстановить модули: `npm install`   
+- Запуск СЕРВЕРА DevServer: `npm start`
 
-Клонировать репозиторий  
-Восстановить модули: `npm install`   
-Запуск СЕРВЕРА DevServer: `npm start`
-
+Сервер разработки будет запущен по адресу http://127.0.0.1:3000/
+Документация по открытому API (Swagger) доступна по адресу http://127.0.0.1:8000/swagger/
 
 
 
